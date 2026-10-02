@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "etc5523"
+assignment: "assignment-3"
+owner:
+  username: "yfan0161-stack"
+  id: 265663282
+  accepted_at: "2026-10-02T05:59:44Z"
+source:
+  owner: "ETC5523-2026"
+  owner_id: 265932295
+  repo: "assignment-3"
+  branch: "main"
