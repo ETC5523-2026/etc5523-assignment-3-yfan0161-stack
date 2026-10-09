@@ -22,7 +22,7 @@ site:
 format:
   html:
     theme: cosmo
-    css: custom.scss
+    css: styles.css
     toc: true
     toc-depth: 3
     smooth-scroll: true
