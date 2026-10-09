@@ -1,0 +1,69 @@
+/* css styles */
+.navbar-dark, .quarto-title-banner {
+  background-color: #006DAE;
+}
+:root {
+  --ink: #1a1a1a;
+  --muted: #6b7280;
+  --bamboo-dark: #2d6a4f;
+  --bamboo-light: #95d5b2;
+  --bamboo-soft: #d8f3dc;
+  --body-bg: #ffffff;
+  --card-bg: #ffffff;
+  --heading-color: var(--bamboo-dark);
+}
+
+.navbar-dark, .quarto-title-banner {
+  background-color: var(--bamboo-dark) !important;
+}
+
+body {
+  background-color: var(--body-bg);
+  background-image: url("images/bamboo-texture.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 35% auto;
+  background-attachment: fixed;
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+}
+
+
+h1, h2, h3 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+a {
+  color: var(--bamboo-dark);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.post-preview {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--bamboo-light);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+th {
+  background-color: var(--bamboo-soft);
+  color: var(--bamboo-dark);
+  font-weight: 600;
+}
