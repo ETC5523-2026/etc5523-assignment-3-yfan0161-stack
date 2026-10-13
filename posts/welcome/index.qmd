@@ -20,7 +20,7 @@ The evidence in this post comes from a 2022 modelling study by Zachreson and col
 
 Figure @fig-breach-risk shows how the risk of a quarantine breach changes with viral transmissibility and vaccine efficacy. The colour scale represents total infection force relative to a pre-Delta, unvaccinated baseline — darker red means higher breach risk.
 
-![Quarantine breach risk across R₀ and vaccine efficacy](images/figure1-heatmap.png){#fig-breach-risk width="90%"}
+![Quarantine breach risk across R₀ and vaccine efficacy](/images/figure1-heatmap.png){#fig-breach-risk width="90%"}
 
 Two key patterns stand out:
 1.  **Higher transmissibility demands higher vaccine efficacy.** For a Delta-like R₀ of 6, vaccine efficacy must exceed 60% just to keep breach risk at baseline levels. For an R₀ of 8, that threshold rises to 70%.

@@ -2,22 +2,57 @@
   {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog Template",
+    "title": "Can Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!"
+    "text": "Before the Delta variant, countries like Australia and New Zealand relied on strict border quarantine to keep COVID-19 out. This approach worked for earlier strains: rare breaches could be contained before they escalated into community outbreaks and costly lockdowns.\nThe arrival of the Delta variant changed this calculation. Delta spread much faster, caused more severe illness, and reduced how well vaccines worked. This raised a core policy question that this blog post explores: How do two key factors — viral transmissibility (how easily the virus spreads) and vaccine efficacy (how well vaccines block infection and onward spread) — shape the ability of border quarantine systems to prevent outbreaks?"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This is a blog template for the ETC5523 Communicating with Data assessment at Monash University."
+    "text": "Yunhui Fan\nMaster of Business Analytics\nMonash University\n\nGitHub Email\n\n\n\nI am a Master of Business Analytics student at Monash University, with a focus on data communication, public health analytics, and data visualisation. This website is built for the ETC5523 Communicating with Data assessment, where I explore how data-driven insights can be translated into clear, accessible stories for non-technical audiences.\nMy academic background spans financial mathematics and business analytics, with particular interest in infectious disease modelling and public health policy evaluation. I believe effective data storytelling relies not just on technical rigour, but also on thoughtful design that respects the reader’s time and context.\nBeyond coursework, I enjoy experimenting with web-based data visualisation and building reproducible analytical workflows."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "ETC5523 Blog Assessment",
     "section": "",
-    "text": "Welcome To My Blog Template\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJul 18, 2022\n\n\nEmi Tanaka\n\n\n\n\n\nNo matching items"
+    "text": "Can Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 13, 2026\n\n\nYunhui Fan\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/welcome/index.html#problem-description",
+    "href": "posts/welcome/index.html#problem-description",
+    "title": "Can Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility",
+    "section": "",
+    "text": "Before the Delta variant, countries like Australia and New Zealand relied on strict border quarantine to keep COVID-19 out. This approach worked for earlier strains: rare breaches could be contained before they escalated into community outbreaks and costly lockdowns.\nThe arrival of the Delta variant changed this calculation. Delta spread much faster, caused more severe illness, and reduced how well vaccines worked. This raised a core policy question that this blog post explores: How do two key factors — viral transmissibility (how easily the virus spreads) and vaccine efficacy (how well vaccines block infection and onward spread) — shape the ability of border quarantine systems to prevent outbreaks?"
+  },
+  {
+    "objectID": "posts/welcome/index.html#analysis",
+    "href": "posts/welcome/index.html#analysis",
+    "title": "Can Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility",
+    "section": "Analysis",
+    "text": "Analysis\nThe evidence in this post comes from a 2022 modelling study by Zachreson and colleagues, who built an individual-based simulation of the Australian border quarantine system and paired it with a community transmission model. The team tested scenarios across a range of reproduction numbers (R₀, from 1 to 10) and vaccine efficacy levels (VE, from 0% to 90%).\n\nQuarantine breach risk\nFigure Figure 1 shows how the risk of a quarantine breach changes with viral transmissibility and vaccine efficacy. The colour scale represents total infection force relative to a pre-Delta, unvaccinated baseline — darker red means higher breach risk.\n\n\n\n\n\n\nFigure 1: Quarantine breach risk across R₀ and vaccine efficacy\n\n\n\nTwo key patterns stand out: 1. Higher transmissibility demands higher vaccine efficacy. For a Delta-like R₀ of 6, vaccine efficacy must exceed 60% just to keep breach risk at baseline levels. For an R₀ of 8, that threshold rises to 70%. 2. Requirements saturate at very high R₀. Even for an R₀ of 10, the required vaccine efficacy levels off around 70–80%. This is because travellers in quarantine are grouped into small family cohorts, which puts a natural limit on how far internal transmission can spread — as long as basic infection control remains in place.\n\n\nWhat drives these results?\nTable Table 1 summarises how sensitive the model is to changes in key assumptions. This helps us understand which factors matter most for real-world quarantine performance.\n\n\n\n\n\n\n\n\nFactor\nScenario\nImpact on quarantine efficacy\n\n\n\n\nIncubation period\nShorter (4.4 days)\nSmall improvement: faster detection, shorter infectious window\n\n\nVaccine mode of action\nBlocks transmission only\nRequired VE drops by ~20 percentage points\n\n\nAsymptomatic rate\n100% asymptomatic\nSmall overall impact; risk doubles at low VE\n\n\nFacility infection control\n10× higher transmission\nSevere escalation: up to 100× baseline risk if VE &lt; 30%\n\n\n\n\n\n\nTable 1\n\n\nTable Table 1: Sensitivity of quarantine performance to key parameter changes.\n\n\n\nThe most important takeaway from this sensitivity test is that infection control inside quarantine facilities is non-negotiable. If protocols break down and transmission within the facility spikes, even moderate vaccine efficacy cannot compensate for the increased breach risk.\nLinking back to our opening question: the stronger the virus spreads, the more the system depends on both vaccines and well-run infection control. Quarantine alone cannot offset high transmissibility on its own."
+  },
+  {
+    "objectID": "posts/welcome/index.html#conclusion",
+    "href": "posts/welcome/index.html#conclusion",
+    "title": "Can Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility",
+    "section": "Conclusion",
+    "text": "Conclusion\nReturning to the question of whether border quarantine can stop Delta: it can, but only as part of a broader system. Three conclusions stand out:\n\nBorder quarantine cannot make up for low community vaccination. Even if every traveller and worker inside quarantine is fully vaccinated, a breach will still spread quickly in a community with low coverage. Quarantine buys time — it does not replace population immunity.\nVaccines that block transmission are far more valuable than vaccines that only prevent disease. The model shows that when vaccines reduce onward spread from breakthrough infections, the required efficacy threshold drops substantially.\nQuarantine stringency should be calibrated to variant prevalence. The same measures that work for a low-transmissibility strain will be insufficient for a more infectious variant. Systems need built-in flexibility to tighten rules when more dangerous variants emerge.\n\nThese results are consistent with the wider evidence on border quarantine performance during the Delta wave of the COVID-19 pandemic [@zachreson2022covid]. For policy analysts and students of public health, the broader lesson is clear: effective pandemic response relies on coordinated layers of protection, not any single measure in isolation."
+  },
+  {
+    "objectID": "posts/welcome/index.html#references",
+    "href": "posts/welcome/index.html#references",
+    "title": "Can Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility",
+    "section": "References",
+    "text": "References\nZachreson, Cameron, Freya M. Shearer, David J. Price, Michael J. Lydeamore, Jodie McVernon, James McCaw, and Nicholas Geard. 2022. “COVID-19 in Low-Tolerance Border Quarantine Systems: Impact of the Delta Variant of SARS-CoV-2.” Science Advances."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "About\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCan Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility\n\n\n\n\n\n\n\n\nOct 13, 2026\n\n\nYunhui Fan\n\n\n\n\n\n\n\n\n\n\n\n\nETC5523 Blog Assessment\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -1,13 +1,32 @@
 ---
 title: "About"
 image: profile.jpg
-about:
-  template: jolla
-  links:
-    - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
-
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+::: {.columns}
+::: {.column width="35%"}
+
+<img src="/images/photo123.png" alt="Yunhui Fan" style="border-radius: 50%; width: 220px; height: 220px; object-fit: cover; display: block; margin: 0 auto;">
+
+### Yunhui Fan
+
+Master of Business Analytics  
+Monash University
+
+::: {.btn-group style="text-align: center; margin-top: 1rem;"}
+[GitHub](https://github.com/yfan0161){.btn .btn-outline-primary}
+[Email](mailto:yunhui.fan@student.monash.edu){.btn .btn-outline-secondary}
+:::
+
+:::
+
+::: {.column width="65%"}
+
+I am a Master of Business Analytics student at Monash University, with a focus on data communication, public health analytics, and data visualisation. This website is built for the ETC5523 Communicating with Data assessment, where I explore how data-driven insights can be translated into clear, accessible stories for non-technical audiences.
+
+My academic background spans financial mathematics and business analytics, with particular interest in infectious disease modelling and public health policy evaluation. I believe effective data storytelling relies not just on technical rigour, but also on thoughtful design that respects the reader’s time and context.
+
+Beyond coursework, I enjoy experimenting with web-based data visualisation and building reproducible analytical workflows.
+
+:::
+:::
