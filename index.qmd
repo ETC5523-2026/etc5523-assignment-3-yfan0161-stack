@@ -1,14 +1,13 @@
 ---
-title: "ETC5523 Blog Assessment"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Border Quarantine and the Delta Variant"
 ---
+This website presents a data story about how vaccine efficacy and viral transmissibility shape the performance of border quarantine systems during the COVID-19 Delta wave.
 
+It is completed as part of the ETC5523 Communicating with Data assessment at Monash University.
 
+### Explore the site
+
+- **Blog**: Read the full analysis of quarantine performance under Delta
+- **About**: Learn more about the author
+
+The analysis is based on a 2022 modelling study of the Australian border quarantine system, adapted for a non-technical audience.
