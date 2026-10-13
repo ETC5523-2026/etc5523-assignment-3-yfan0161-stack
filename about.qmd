@@ -1,26 +1,24 @@
 ---
 title: "About"
-image: profile.jpg
 ---
 
-::: {.columns}
-::: {.column width="35%"}
+::: {.about-top style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;"}
 
-<img src="/images/photo123.png" alt="Yunhui Fan" style="border-radius: 50%; width: 220px; height: 220px; object-fit: cover; display: block; margin: 0 auto;">
+<img src="/images/photo123.png" alt="Yunhui Fan" style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 4px solid #2d6a4f; display: block; margin: 0 auto 1rem;">
 
 ### Yunhui Fan
 
 Master of Business Analytics  
 Monash University
 
-::: {.btn-group style="text-align: center; margin-top: 1rem;"}
+::: {.btn-group style="display: inline-flex; gap: 0.5rem; margin-top: 1rem;"}
 [GitHub](https://github.com/yfan0161){.btn .btn-outline-primary}
 [Email](mailto:yunhui.fan@student.monash.edu){.btn .btn-outline-secondary}
 :::
 
 :::
 
-::: {.column width="65%"}
+::: {.about-bottom style="max-width: 720px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 8px; border-left: 4px solid #2d6a4f;"}
 
 I am a Master of Business Analytics student at Monash University, with a focus on data communication, public health analytics, and data visualisation. This website is built for the ETC5523 Communicating with Data assessment, where I explore how data-driven insights can be translated into clear, accessible stories for non-technical audiences.
 
@@ -28,5 +26,4 @@ My academic background spans financial mathematics and business analytics, with 
 
 Beyond coursework, I enjoy experimenting with web-based data visualisation and building reproducible analytical workflows.
 
-:::
 :::

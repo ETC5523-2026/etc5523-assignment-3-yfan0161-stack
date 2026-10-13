@@ -8,9 +8,7 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/about.html",
-      "/posts/welcome/index.html",
-      "/index.html"
+      "/posts/welcome/index.html"
     ]
   }
 ]

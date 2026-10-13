@@ -1,4 +1,25 @@
 ---
 title: "Blog"
-listing: posts
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
 ---
+
+<style>
+.quarto-listing-category .list-group-item,
+.quarto-listing .list-group-item {
+  background-color: #ffffff !important;
+  border-left: 4px solid #2d6a4f;
+}
+
+.quarto-listing h3,
+.quarto-listing h3 a {
+  color: #2d6a4f !important;
+}
+
+.quarto-listing h3 a:hover {
+  color: #1b4332 !important;
+}
+</style>
+

@@ -8,6 +8,7 @@
 
 <meta name="author" content="Yunhui Fan">
 <meta name="dcterms.date" content="2026-10-13">
+<meta name="description" content="How vaccine efficacy and viral transmissibility shape border quarantine performance during the Delta wave, with key thresholds for policy makers.">
 
 <title>Can Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility – Vaccine Efficacy &amp; Border Quarantine</title>
 <style>
@@ -22,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -42,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1400be2d8140a5d22b71e108cf5d3f3f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -98,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts.qmd"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -108,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/yfan1061"> <i class="bi bi-github" role="img" aria-label="GitHub Profile">
+    <a class="nav-link" href="https://github.com/yfan0161"> <i class="bi bi-github" role="img" aria-label="GitHub Profile">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -124,10 +145,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Can Border Quarantine Stop the Delta Variant? The Role of Vaccine Efficacy and Transmissibility</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-              </div>
-                  </div>
+                  <div>
+        <div class="description">
+          How vaccine efficacy and viral transmissibility shape border quarantine performance during the Delta wave, with key thresholds for policy makers.
+        </div>
+      </div>
+                </div>
   </div>
     
   
@@ -180,29 +203,53 @@ ul.task-list li input[type="checkbox"] {
 <section id="problem-description" class="level2">
 <h2 class="anchored" data-anchor-id="problem-description">Problem description</h2>
 <p>Before the Delta variant, countries like Australia and New Zealand relied on strict border quarantine to keep COVID-19 out. This approach worked for earlier strains: rare breaches could be contained before they escalated into community outbreaks and costly lockdowns.</p>
-<p>The arrival of the Delta variant changed this calculation. Delta spread much faster, caused more severe illness, and reduced how well vaccines worked. This raised a core policy question that this blog post explores: How do two key factors — <strong>viral transmissibility</strong> (how easily the virus spreads) and <strong>vaccine efficacy</strong> (how well vaccines block infection and onward spread) — shape the ability of border quarantine systems to prevent outbreaks?</p>
+<p>The arrival of the Delta variant changed this calculation. Delta spread much faster, caused more severe illness, and reduced how well vaccines worked. This raised a core policy question that this blog post explores: How do two key factors — <strong>viral transmissibility</strong> (how easily the virus spreads, measured by the basic reproduction number R₀) and <strong>vaccine efficacy</strong> (how well vaccines block infection and onward spread) — shape the ability of border quarantine systems to prevent outbreaks?</p>
 </section>
 <section id="analysis" class="level2">
 <h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
-<p>The evidence in this post comes from a 2022 modelling study by Zachreson and colleagues, who built an individual-based simulation of the Australian border quarantine system and paired it with a community transmission model. The team tested scenarios across a range of reproduction numbers (R₀, from 1 to 10) and vaccine efficacy levels (VE, from 0% to 90%).</p>
+<p>The evidence in this post comes from a 2022 modelling study by Zachreson and colleagues <span class="citation" data-cites="zachreson2022covid">(<a href="#ref-zachreson2022covid" role="doc-biblioref">Zachreson et al. 2022</a>)</span>, who built an individual-based simulation of the Australian border quarantine system and paired it with a community transmission model. The team tested scenarios across a range of reproduction numbers (R₀, from 1 to 10) and vaccine efficacy levels (VE, from 0% to 90%).</p>
+<p>The model also shows that community vaccination coverage is a critical multiplier of quarantine success: even when quarantine itself works, low population immunity means any breach will escalate rapidly.</p>
 <section id="quarantine-breach-risk" class="level3">
 <h3 class="anchored" data-anchor-id="quarantine-breach-risk">Quarantine breach risk</h3>
-<p>Figure <a href="#fig-breach-risk" class="quarto-xref">Figure&nbsp;1</a> shows how the risk of a quarantine breach changes with viral transmissibility and vaccine efficacy. The colour scale represents total infection force relative to a pre-Delta, unvaccinated baseline — darker red means higher breach risk.</p>
+<p>Figure <a href="#fig-breach-risk" class="quarto-xref">Figure&nbsp;2</a> shows how the risk of a quarantine breach changes with viral transmissibility and vaccine efficacy. The colour scale represents total infection force relative to a pre-Delta, unvaccinated baseline — darker green means lower risk, brighter yellow means higher risk. The thick green line marks the baseline level: points below the line are safer than the unvaccinated pre-Delta scenario.</p>
+<p>To read the chart: find the column for your chosen R₀ value on the x-axis, then move up to see how vaccine efficacy on the y-axis changes risk. The point where the green baseline line crosses is the minimum vaccine efficacy needed to keep breach risk at baseline levels.</p>
+<div id="fig-breach-risk" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Simplified heatmap. Green = low risk, yellow = high risk. A thick green line shows the baseline risk threshold.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-breach-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../..\images/figure1-heatmap-simple.png" class="img-fluid figure-img" style="width:90.0%" alt="Simplified heatmap. Green = low risk, yellow = high risk. A thick green line shows the baseline risk threshold.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-breach-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Simplified heatmap of quarantine breach risk
+</figcaption>
+</figure>
+</div>
+<p>Figure: Quarantine breach risk across viral transmissibility (R₀) and vaccine efficacy. Colour shows infection risk relative to a pre-Delta unvaccinated baseline; the thick green line marks the baseline level (1×). Values below the line are safer than baseline. Reproduced from Zachreson et al.&nbsp;(2022).</p>
 <div id="fig-breach-risk" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-breach-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../..\images/figure1-heatmap.png" class="img-fluid figure-img" style="width:90.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-breach-risk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Quarantine breach risk across R₀ and vaccine efficacy
+Figure&nbsp;2: Quarantine breach risk across R₀ and vaccine efficacy
 </figcaption>
 </figure>
 </div>
-<p>Two key patterns stand out: 1. <strong>Higher transmissibility demands higher vaccine efficacy.</strong> For a Delta-like R₀ of 6, vaccine efficacy must exceed 60% just to keep breach risk at baseline levels. For an R₀ of 8, that threshold rises to 70%. 2. <strong>Requirements saturate at very high R₀.</strong> Even for an R₀ of 10, the required vaccine efficacy levels off around 70–80%. This is because travellers in quarantine are grouped into small family cohorts, which puts a natural limit on how far internal transmission can spread — as long as basic infection control remains in place.</p>
+<p><em>Adapted from Zachreson et al.&nbsp;(2022). The x-axis shows how contagious the virus is (R₀); the y-axis shows vaccine efficacy.</em></p>
+<p>Two key patterns stand out:</p>
+<ol type="1">
+<li><strong>Higher transmissibility demands higher vaccine efficacy.</strong> For a Delta-like R₀ of 6, vaccine efficacy must exceed roughly 50–55% just to keep breach risk at baseline levels. For an R₀ of 8, that threshold rises to around 65%.</li>
+<li><strong>Requirements saturate at very high R₀.</strong> Even for an R₀ of 10, the required vaccine efficacy levels off around 70–75%. This is because travellers in quarantine are grouped into small family cohorts, which puts a natural limit on how far internal transmission can spread — as long as basic infection control remains in place.</li>
+</ol>
 </section>
 <section id="what-drives-these-results" class="level3">
 <h3 class="anchored" data-anchor-id="what-drives-these-results">What drives these results?</h3>
-<p>Table <a href="#tbl-sensitivity" class="quarto-xref">Table&nbsp;1</a> summarises how sensitive the model is to changes in key assumptions. This helps us understand which factors matter most for real-world quarantine performance.</p>
+<p><a href="#tbl-sensitivity" class="quarto-xref">Table&nbsp;1</a> summarises how sensitive the model is to changes in key assumptions. This helps us understand which factors matter most for real-world quarantine performance.</p>
+<div id="tbl-sensitivity" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sensitivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Sensitivity of quarantine performance to key parameter changes.
+</figcaption>
+<div aria-describedby="tbl-sensitivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 16%">
@@ -239,13 +286,6 @@ Figure&nbsp;1: Quarantine breach risk across R₀ and vaccine efficacy
 </tr>
 </tbody>
 </table>
-<div id="tbl-sensitivity" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-sensitivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1
-</figcaption>
-<div aria-describedby="tbl-sensitivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p>Table <a href="#tbl-sensitivity" class="quarto-xref">Table&nbsp;1</a>: Sensitivity of quarantine performance to key parameter changes.</p>
 </div>
 </figure>
 </div>
@@ -258,14 +298,18 @@ Table&nbsp;1
 <p>Returning to the question of whether border quarantine can stop Delta: it can, but only as part of a broader system. Three conclusions stand out:</p>
 <ol type="1">
 <li><strong>Border quarantine cannot make up for low community vaccination.</strong> Even if every traveller and worker inside quarantine is fully vaccinated, a breach will still spread quickly in a community with low coverage. Quarantine buys time — it does not replace population immunity.</li>
-<li><strong>Vaccines that block transmission are far more valuable than vaccines that only prevent disease.</strong> The model shows that when vaccines reduce onward spread from breakthrough infections, the required efficacy threshold drops substantially.</li>
+<li><strong>Vaccines that block transmission are far more valuable than vaccines that only prevent disease.</strong> As shown in Table <a href="#tbl-sensitivity" class="quarto-xref">Table&nbsp;1</a>, when vaccines primarily reduce onward transmission, the required efficacy threshold drops by roughly 20 percentage points.</li>
 <li><strong>Quarantine stringency should be calibrated to variant prevalence.</strong> The same measures that work for a low-transmissibility strain will be insufficient for a more infectious variant. Systems need built-in flexibility to tighten rules when more dangerous variants emerge.</li>
 </ol>
-<p>These results are consistent with the wider evidence on border quarantine performance during the Delta wave of the COVID-19 pandemic <span class="citation" data-cites="zachreson2022covid">[@zachreson2022covid]</span>. For policy analysts and students of public health, the broader lesson is clear: effective pandemic response relies on coordinated layers of protection, not any single measure in isolation.</p>
+<p>These results are consistent with the wider evidence on border quarantine performance during the Delta wave of the COVID-19 pandemic <span class="citation" data-cites="zachreson2022covid">(<a href="#ref-zachreson2022covid" role="doc-biblioref">Zachreson et al. 2022</a>)</span>. For policy analysts and students of public health, the broader lesson is clear: effective pandemic response relies on coordinated layers of protection, not any single measure in isolation.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<p>Zachreson, Cameron, Freya M. Shearer, David J. Price, Michael J. Lydeamore, Jodie McVernon, James McCaw, and Nicholas Geard. 2022. “COVID-19 in Low-Tolerance Border Quarantine Systems: Impact of the Delta Variant of SARS-CoV-2.” <em>Science Advances</em>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-zachreson2022covid" class="csl-entry" role="listitem">
+Zachreson, Cameron, Freya M Shearer, David J Price, Michael J Lydeamore, Jodie McVernon, James McCaw, and Nicholas Geard. 2022. <span>“COVID-19 in Low-Tolerance Border Quarantine Systems: Impact of the Delta Variant of SARS-CoV-2.”</span> <em>Science Advances</em> 8 (45): eadd4939. <a href="https://doi.org/10.1126/sciadv.add4939">https://doi.org/10.1126/sciadv.add4939</a>.
+</div>
+</div>
 
 
 </section>
