@@ -2,6 +2,20 @@
 .navbar-dark, .quarto-title-banner {
   background-color: #006DAE;
 }
+
+.quarto-title-banner h1,
+.quarto-title-banner .title,
+.quarto-title-banner .subtitle,
+.quarto-title-banner .author,
+.quarto-title-banner .date {
+  color: #ffffff !important;
+}
+
+
+.quarto-title-banner a {
+  color: #ffffff !important;
+}
+
 :root {
   --ink: #1a1a1a;
   --muted: #6b7280;
